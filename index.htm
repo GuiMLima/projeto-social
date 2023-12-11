@@ -3,12 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Redes sociais</title>
     <style>
-        
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        body {
+            background-image: url('../projeto-social/imagens/fundo-cinza.webp');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        main {
+            position: relative;
+            height: 100vh;
+        }
+
+        section#computador {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 437px
+            ;
+            width: 300px;
+            background: url('../projeto-social/imagens/smartphone-300.png') no-repeat;
+        }
+
+        iframe#tela {
+            position: relative;
+            top: 10px;
+            left: 53px;
+            border-radius: 7%;
+            height: 418px;
+            width: 197px;
+        }
     </style>
 </head>
 <body>
-    
+    <main>
+        <section id="computador">
+            <iframe src="home.html" name="tela" id="tela" frameborder=""></iframe>
+        </section>
+        <section id="redes-sociais">
+        </section>
+    </main>
 </body>
 </html>
